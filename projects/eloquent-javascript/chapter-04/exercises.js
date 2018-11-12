@@ -234,6 +234,19 @@ function nth(list, element) {
 //     return false;
 //   }
 // }
+// function deepEqual(value1, value2) {
+//   if (typeof value1 == 'object' && value1 != null) {
+//     if (value1 === value2) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   } else if (value1 === value2) {
+//     return true; 
+//   } else {
+//     return false;
+//   }
+// }
 
 function deepEqual (obj1, obj2) {
   let hold = false;

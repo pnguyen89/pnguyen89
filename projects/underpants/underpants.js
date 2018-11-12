@@ -292,9 +292,6 @@ _.unique = function(arr) {
         return result; 
     };
 
-
-
-
 /** _.map()
 * Arguments:
 *   1) A collection
@@ -324,9 +321,10 @@ _.map = function (collection, test) {
     let result = [];
     _.each(collection, function (e, i, a) {
             result.push(test(e, i, a));
-            })
+    })
             return result; 
 }; 
+
       
 
 
@@ -348,21 +346,27 @@ _.map = function (collection, test) {
 // use .map takes a collection, object or array, loops through, and returns 
 // if it passes the test that is input 
 
-_.pluck = function (arr, property) {
-   return _.map(arr, function(e, i, a) {
-         return arr[i][property];
+
+// _.pluck = function (arr, property) {
+//   return _.map(arr, function(e, i, a) {
+//          return arr[i][property];
+//     }) 
+// };
+
+_.pluck = function (obj, property) {
+    let result = [];
+    _.map(obj, function(e, i, a) {
+        if(obj[i][property]) {
+            result.push(obj[i][property]);
+        }
     }) 
+    return result; 
 };
-
-
-
 
 // if you're not using all of the arguments, in the function, you can take them out
 // since you won't be using them -> only worried about is element 
 // also, yu can remove your result array, don't need to push. 
 // push map function, and inside, return i[prop];
-
-
 
 /** _.contains()
 * Arguments:
@@ -460,7 +464,6 @@ _.every = function (collection, test) {
     // must write return for last ternary statement 
 };
 
-
 /** _.some()
 * Arguments:
 *   1) A collection
@@ -505,7 +508,7 @@ _.some = function (collection, test) {
     }
     return (hold.length === collection.length || hold.length === Object.keys(collection).length) ? false : true;
 }
- 
+
 
 /** _.reduce()
 * Arguments:
