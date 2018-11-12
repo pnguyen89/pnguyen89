@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kodii the Coding Cat</title>
+        <style>
+            body {
+                background: rgb(240,128,128);
+                color: rgb(40, 40, 40);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(205, 204, 255);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 25px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(165, 252, 252);
+                display: flex;
+                border-radius: 25px;
+                
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 300px;
+                padding:1px;
+                border:1px solid #021a40;
+                border-radius: 25px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>Kodii's Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="studies.html">Studies</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/44478133_10156271771078411_8623841146893762560_n.jpg?_nc_cat=108&_nc_ht=scontent-dfw5-1.xx&oh=014495dcaf7c76c7edb744cd3f2491b0&oe=5C5AC020">
+                </div>
+                
+                <div class="content">
+                    <header>Kodii</header>
+                    <p>Position: Student at Operation Spark</p>
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Coding</li>
+                            <li>Art</li>
+                            <li>Traveling</li>
+                        </ul>
+                    </section>
+                    
+                </div>
+            </main>
+        </div>
+    </body>
+    
+</html>
